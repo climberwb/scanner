@@ -23,7 +23,6 @@ terminal.prototype = {
         var len = foodArr.length;
         for (i = 0; i < len; i++) {
             var foodCount = (countString.match(new RegExp(foodArr[i], "g")) || []).length; //logs 4
-            //TODO take care of remainder numbers with discounts
             switch (foodArr[i]) {
                 case "A":
                     if (this.isDivisible(foodCount, 4)) {
