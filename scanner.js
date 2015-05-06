@@ -14,9 +14,6 @@ terminal.prototype = {
     isDivisible: function (foodCount, number) {
         return foodCount % number === 0;
     },
-    isDivBySix: function (foodCount) {
-        return foodCount % 6 === 0;
-    },
     total: function () {
         var countArr = this.count;
         var countString = countArr.join('');
@@ -53,7 +50,7 @@ terminal.prototype = {
 
             }
 
-        } //for
+        } 
         return price;
     }
 };
